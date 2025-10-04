@@ -17,7 +17,7 @@ Selamat datang di Bot Sosmed Twitter, sebuah solusi otomatisasi canggih yang dir
 * ✅ **Riset Konten Otomatis**: Melakukan riset singkat melalui GNews untuk mendapatkan konteks berita terkait topik trending.
 * ✅ **Teks Tweet Berbasis AI**: Menggunakan **Google Gemini** untuk menulis teks tweet yang menarik, informatif, dan memancing interaksi berdasarkan hasil riset.
 * ✅ **Pencarian Gambar Otomatis**: Secara otomatis mencari gambar yang relevan dengan topik dari artikel berita asli, memastikan setiap tweet memiliki visual yang kuat.
-* ✅ **Manajemen Hashtag Cerdas**: Menggabungkan hashtag utama dari topik, hashtag populer dari `trends24.in`, dan hashtag manual dari konfigurasi Anda.
+* ✅ **Manajemen Hashtag Cerdas**: Menggabungkan hashtag utama dari topik, hashtag populer dari twitter, dan hashtag manual dari konfigurasi Anda.
 * ✅ **Anti-Duplikat**: Bot mengingat topik yang sudah pernah diposting untuk memastikan konten yang dihasilkan selalu baru.
 * ✅ **Konfigurasi Eksternal**: Semua pengaturan penting dikelola melalui satu file `config.json` yang mudah dipahami.
 
@@ -139,7 +139,7 @@ Welcome to Bot Sosmed Twitter, a sophisticated automation solution designed to t
 * ✅ **Automated Content Research**: Performs a quick search via GNews to get news context related to the trending topic.
 * ✅ **AI-Powered Tweet Text**: Leverages **Google Gemini** to write engaging, informative, and interaction-driven tweet text based on the research.
 * ✅ **Automatic Image Search**: Automatically finds a relevant image from the original news article, ensuring every tweet is visually strong.
-* ✅ **Smart Hashtag Management**: Combines the main topic hashtag, popular hashtags from `trends24.in`, and your manual hashtags from the configuration.
+* ✅ **Smart Hashtag Management**: Combines the main topic hashtag, popular hashtags from twitter, and your manual hashtags from the configuration.
 * ✅ **Anti-Duplicate**: The bot remembers which topics have been posted to ensure the generated content is always new.
 * ✅ **External Configuration**: All critical settings are managed through a single, easy-to-understand `config.json` file.
 
