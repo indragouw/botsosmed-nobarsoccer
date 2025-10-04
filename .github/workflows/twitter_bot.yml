@@ -1,0 +1,47 @@
+name: Bot Auto-Tweet (Google Trends)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  run-twitter-bot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 1. Checkout Repositori
+        uses: actions/checkout@v4
+
+      - name: 2. Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: 3. Install Google Chrome
+        run: sudo apt-get update && sudo apt-get install -y google-chrome-stable
+
+      - name: 4. Install Semua Library Python
+        run: pip install -r requirements.txt
+
+      - name: 5. Jalankan Skrip Utama Bot Twitter
+        env:
+          # Kredensial Twitter
+          TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+          TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+          TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          # Kredensial Gemini & Lisensi
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
+        run: python botsosmedtwitter.py
+
+      - name: 6. Simpan Log Baru ke Repositori
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull
+          git add processed_topics.log
+          git diff --staged --quiet || git commit -m "Update processed topics log for Twitter bot"
+          git push
