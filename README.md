@@ -31,10 +31,10 @@ Pastikan repositori Anda memiliki struktur file berikut untuk fungsionalitas pen
 /
 ├── .github/
 │   └── workflows/
-│       └── main.yml        (atau nama file workflow .yml Anda)
+│       └── twitter_bot.yml        (atau nama file workflow .yml Anda)
 │
 ├── config.json             # File Konfigurasi Utama
-├── bot.py                  # Skrip Utama Bot
+├── botsosmedtwitter.py                  # Skrip Utama Bot
 ├── requirements.txt        # Daftar library Python yang dibutuhkan
 ├── processed_topics.log    # File log untuk mencegah duplikat (dibuat otomatis)
 └── README.md
@@ -153,10 +153,10 @@ Ensure your repository has the following file structure for full functionality:
 /
 ├── .github/
 │   └── workflows/
-│       └── main.yml        (or your workflow .yml file name)
+│       └── twitter_bot.yml        (or your workflow .yml file name)
 │
 ├── config.json             # Main Configuration File
-├── bot.py                  # Main Bot Script
+├── botsosmedtwitter.py                  # Main Bot Script
 ├── requirements.txt        # List of required Python libraries
 ├── processed_topics.log    # Log file to prevent duplicates (auto-generated)
 └── README.md
