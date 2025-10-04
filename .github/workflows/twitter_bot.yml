@@ -35,7 +35,7 @@ jobs:
           # Kredensial Gemini & Lisensi
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           BOT_LICENSE_EMAIL: ${{ secrets.BOT_LICENSE_EMAIL }}
-        run: python botsosmedtwitter.py
+        run: python dist/botsosmedtwitter.py
 
       - name: 6. Simpan Log Baru ke Repositori
         run: |
