@@ -1,0 +1,27 @@
+{
+  "GEMINI_SETTINGS": {
+    "model": "gemini-2.5-flash",
+    "temperature": 0.8
+  },
+  "GOOGLE_TRENDS_CONFIG": {
+    "geo": "ID",
+    "hl": "id",
+    "hours": 4,
+    "category": "17"
+  },
+  "GNEWS_CONFIG": {
+    "language": "id",
+    "country": "ID"
+  },
+  "TRENDS24_CONFIG": {
+    "scrape_url": "https://www.trends24.in/indonesia/",
+    "trending_limit": 4
+  },
+  "TWITTER_CONFIG": {
+    "traffic_link": "Top Up Game Murah di Arenatopup.com",
+    "manual_hashtags": ["#topupmlmurah", "#topupfftermurah"]
+  },
+  "GEMINI_PROMPTS": {
+    "generate_tweet": "Anda adalah seorang social media manager viral. Berdasarkan topik utama '{topic}' dan rangkuman berita '{news_context}', buat satu tweet yang sangat menarik (maksimal 150 karakter) yang membuat orang penasaran untuk mencari tahu lebih lanjut. JANGAN gunakan hashtag dalam jawabanmu."
+  }
+}
