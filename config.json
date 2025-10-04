@@ -18,10 +18,10 @@
     "trending_limit": 4
   },
   "TWITTER_CONFIG": {
-    "traffic_link": "Top Up Game Murah di Arenatopup.com",
-    "manual_hashtags": ["#topupmlmurah", "#topupfftermurah"]
+    "traffic_link": "Streaming Nonton Bola Gratis di NobarSoccer.com",
+    "manual_hashtags": ["#StreamiingBola", "#NontonBolaLive"]
   },
   "GEMINI_PROMPTS": {
-    "generate_tweet": "Anda adalah seorang social media manager viral. Berdasarkan topik utama '{topic}' dan rangkuman berita '{news_context}', buat satu tweet yang sangat menarik (maksimal 150 karakter) yang membuat orang penasaran untuk mencari tahu lebih lanjut. JANGAN gunakan hashtag dalam jawabanmu."
+    "generate_tweet": "Anda adalah seorang social media manager viral. Berdasarkan topik utama '{topic}' dan rangkuman berita '{news_context}', buat satu tweet yang sangat menarik (maksimal 150 karakter) yang membuat orang penasaran untuk mencari tahu lebih lanjut tentang berita bola. JANGAN gunakan hashtag dalam jawabanmu."
   }
 }
